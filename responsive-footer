@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Responsive Footer - Example</title>
+		<style type="text/css">
+			body {
+				background: #333; /* set body bg to same colour as footer bg */
+				margin: 0;
+				font-family: sans-serif;
+				font-size: 1.2em;
+			}
+			.wrapper { /* create wrapper for main contet to separate its bg colour from footer */
+				background: #fff;
+				overflow: auto; /* keep p margin within container */
+			}
+			.container {
+				box-sizing: border-box;
+				margin: 0 auto;
+				max-width: 800px;
+				width: 100%;
+				padding: 0 15px;
+
+			}
+			.footer {
+				font-size: 0.85rem;
+				padding: 20px 0;
+				line-height: 1.6;
+			}
+			.footer__text,
+			.footer__title,
+			.footer__link {
+				color: #aaaaaa;
+				padding: 3px 15px;
+				display: block;
+			}
+			.footer__hr {
+				height: 1px;
+				border: none;
+				background-color: #444;
+			}
+			.footer__sections {
+				display: flex;
+				flex-wrap: wrap-reverse;;
+				padding: 0;
+			}
+			.footer__section {
+				box-sizing: border-box;
+				width: 25%;
+				padding: 15px 0;
+				flex-shrink: 0;
+			}
+			.footer__title {
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			.footer__link {
+				text-decoration: none;
+			}
+			.footer__link:hover {
+				color: #ccc;
+				background: rgba(255, 255, 255, 0.15);
+			}
+			/* On screens that are 992px or less, set the background color to blue */
+			@media screen and (max-width: 992px) {
+			  .footer__section {
+			  	width: 50%;
+			  }
+			}
+
+			/* On screens that are 600px or less, set the background color to olive */
+			@media screen and (max-width: 600px) {
+			  .footer__section {
+			  	width: 100%;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<h1>Your Website</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a neque ante. In hac habitasse platea dictumst. Donec faucibus sit amet tellus non euismod. Aenean et dolor mauris. Donec sed semper nunc, in aliquet ante. Sed justo mauris, congue vel vestibulum quis, condimentum in sapien. Nam faucibus ligula vel facilisis porta.
+				</p>
+				<p>
+					Ut pellentesque magna diam, sed venenatis lacus scelerisque vitae. Donec commodo ipsum vitae metus interdum, id vehicula magna varius. Vestibulum id arcu id augue venenatis aliquet. Maecenas pulvinar fermentum ultrices. Integer egestas, sapien vitae congue laoreet, dui magna congue neque, quis semper lectus risus vitae magna. Quisque est massa, blandit eu nisl ut, venenatis placerat justo. Etiam suscipit porta lacus sit amet tempus. Sed eu turpis sed metus volutpat convallis. Duis mi odio, vestibulum a lacus quis, mollis laoreet ipsum. Etiam quis eros orci. Sed iaculis interdum varius. Proin nec dignissim turpis, facilisis iaculis justo. In tincidunt lacus malesuada, rhoncus erat ut, pretium ligula.
+					
+				</p>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__text container">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a neque ante. In hac habitasse platea dictumst. Donec faucibus sit amet tellus non euismod. Aenean et dolor mauris. Donec sed semper nunc, in aliquet ante. Sed justo mauris, congue vel vestibulum quis, condimentum in sapien. Nam faucibus ligula vel facilisis porta.
+				</p>
+				<p>
+					&copy; 2019 Your Website
+				</p>
+				<hr class="footer__hr"/>
+			</div>
+			<div class="footer__sections container">
+				<div class="footer__section">
+					<span class="footer__title">Section 1</span>
+					<a href="" class="footer__link">Link</a>
+					<a href="" class="footer__link">Link</a>
+					<a href="" class="footer__link">Link</a>
+					<a href="" class="footer__link">Link</a>
+				</div>
+				<div class="footer__section">
+					<span class="footer__title">Section 2</span>
+					<a href="" class="footer__link">Link</a>
+					<a href="" class="footer__link">Link</a>
+
+				</div>
+				<div class="footer__section">
+					<span class="footer__title">Section 3</span>
+					<a href="" class="footer__link">Link</a>
+					<a href="" class="footer__link">Link</a>
+					<a href="" class="footer__link">Link</a>
+					<a href="" class="footer__link">Link</a>				
+				</div>
+				<div class="footer__section">
+					<span class="footer__title">Section 4</span>
+					<a href="" class="footer__link">Link</a>
+					<a href="" class="footer__link">Link</a>
+					<a href="" class="footer__link">Link</a>
+				</div>					
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
